@@ -78,6 +78,8 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+/* Home Section */
+
 .home{
     display: flex;
     justify-content: space-between;
@@ -243,6 +245,8 @@ section{
 }
 
 .home-sci a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--main-color);
     color: var(--bg-color);
 }
 
@@ -351,6 +355,70 @@ span{
 .btn-box.btns a::before{
     background: var(--second-bg-color);
 } */
+
+/* Container for the experience timeline */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+}
+
+/* Base Card Styling */
+.experience-card {
+    position: relative;
+    top: 3rem;
+    width: 50%; /* Takes up half the screen width */
+    background: var(--second-bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* Odd items stick to the LEFT */
+.experience-card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+/* Even items stick to the RIGHT */
+.experience-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Hover Effect */
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.experience-card h3 {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.experience-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustment for Mobile screens */
+@media (max-width: 768px) {
+    .experience-card {
+        width: 100%; /* Collapse back to full width on mobile */
+        align-self: center !important;
+    }
+}
+
+/* Education Section */
 
 .education{
     display: flex;
