@@ -356,7 +356,7 @@ span{
     background: var(--second-bg-color);
 } */
 
-/* Container for the experience timeline */
+/* Base Container for main index.html (Zigzag Layout) */
 .experience-container {
     display: flex;
     flex-direction: column;
@@ -366,11 +366,9 @@ span{
     margin: 3rem auto 0;
 }
 
-/* Base Card Styling */
+/* Base Card Styling (Shared across all pages) */
 .experience-card {
     position: relative;
-    top: 3rem;
-    width: 50%; /* Takes up half the screen width */
     background: var(--second-bg-color);
     border: .2rem solid var(--main-color);
     border-radius: 1.5rem;
@@ -380,17 +378,30 @@ span{
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
-/* Odd items stick to the LEFT */
-.experience-card:nth-child(odd) {
+/* Zigzag positioning ONLY applied on index.html container */
+.experience-container > .experience-card {
+    width: 50%;
+}
+
+.experience-container > .experience-card:nth-child(odd) {
     align-self: flex-start;
 }
 
-/* Even items stick to the RIGHT */
-.experience-card:nth-child(even) {
+.experience-container > .experience-card:nth-child(even) {
     align-self: flex-end;
 }
 
-/* Hover Effect */
+/* Responsive Grid for project/project.html dynamically loaded items */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    width: 100%;
+}
+
+/* Shared Card Hover & Typography */
 .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px var(--main-color);
@@ -410,10 +421,27 @@ span{
     line-height: 1.6;
 }
 
-/* Responsive adjustment for Mobile screens */
+/* Tech Tag Pills */
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-top: 1.5rem;
+}
+
+.experience-tags span {
+    font-size: 1.2rem;
+    padding: .3rem .9rem;
+    background: rgba(0, 171, 240, 0.12);
+    color: var(--main-color);
+    border: 1px solid rgba(0, 171, 240, 0.3);
+    border-radius: 2rem;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .experience-card {
-        width: 100%; /* Collapse back to full width on mobile */
+    .experience-container > .experience-card {
+        width: 100%;
         align-self: center !important;
     }
 }
