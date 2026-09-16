@@ -438,6 +438,44 @@ span{
     border-radius: 2rem;
 }
 
+/* Card Bullet Points Styling */
+.card-bullets {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+
+.card-bullets li {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Styling for the Back Button */
+.back-nav {
+    margin-bottom: 3rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+    transform: translateX(-5px); /* Smooth slide-left effect on hover */
+    color: var(--text-color);
+}
+
+.btn-back i {
+    font-size: 2.2rem;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .experience-container > .experience-card {

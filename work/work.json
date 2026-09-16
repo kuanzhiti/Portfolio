@@ -1,7 +1,11 @@
 [
   {
     "title": "Generative AI Work Shadowing — Particle6",
-    "description": "Explored corporate generative AI workflows and meta-prompting techniques in creative media production, evaluating human authorship in automated pipelines.",
+    "description": [
+      "Observed the integration of GenAI tools(Kling AI, HiggsField, and ElevenLabs) into professional media pipelines to accelerate content delivery.",
+      "Applied advanced meta-prompting techniques to refine LLM outputs and maintain character consistency across video generation models.",
+      "Evaluated hybrid human-AI workflows, balancing automated generation with manual human authorship and quality oversight."
+    ],
     "tags": ["Generative AI", "Meta-Prompting", "Workflow Automation"]
   }
 ]

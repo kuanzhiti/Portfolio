@@ -47,7 +47,7 @@ window.onscroll = () => {
 // Universal Fetch and Render Function
 async function renderCards(containerId, jsonPath) {
     const container = document.getElementById(containerId);
-    if (!container) return; // Exit cleanly if container isn't on the current page
+    if (!container) return;
 
     try {
         const response = await fetch(jsonPath);
@@ -56,24 +56,27 @@ async function renderCards(containerId, jsonPath) {
         const items = await response.json();
 
         container.innerHTML = items.map(item => {
-            // Check if item has a valid external/internal link
-            const hasLink = item.link && item.link !== '#' && item.link.trim() !== '';
+            const hasLink = Boolean(item.link && item.link !== '#' && item.link.trim() !== '');
 
-            // Common inner card content
+            // Format description: array -> <ul>, string -> <p>
+            const descriptionHtml = Array.isArray(item.description)
+                ? `<ul class="card-bullets">${item.description.map(bullet => `<li>${bullet}</li>`).join('')}</ul>`
+                : `<p>${item.description || ''}</p>`;
+
+            // Format tags
+            const tagsHtml = item.tags && item.tags.length > 0 
+                ? `<div class="experience-tags">${item.tags.map(tag => `<span>${tag}</span>`).join('')}</div>`
+                : '';
+
             const cardContent = `
                 <h3>
-                    ${item.title} 
+                    ${item.title || ''} 
                     ${hasLink ? `<i class='bx bx-link-external'></i>` : ''}
                 </h3>
-                <p>${item.description}</p>
-                ${item.tags ? `
-                    <div class="experience-tags">
-                        ${item.tags.map(tag => `<span>${tag}</span>`).join('')}
-                    </div>
-                ` : ''}
+                ${descriptionHtml}
+                ${tagsHtml}
             `;
 
-            // Render <a> tag if link exists, otherwise render <div> tag
             if (hasLink) {
                 return `
                     <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="experience-card">

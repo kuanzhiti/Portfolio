@@ -1,7 +1,10 @@
 [
   {
     "title": "High School AI Workshop Presenter",
-    "description": "Organized and facilitated an introductory Artificial Intelligence workshop for Lower Sixth Form students, breaking down foundational ML concepts.",
+    "description": [
+      "Facilitated an introductory Artificial Intelligence workshop for Lower Sixth Form students.",
+      "Increased awareness of AI disruptions and motivation to upskill among students."
+    ],
     "tags": ["AI Education", "Public Speaking", "Mentorship"]
   },
   {
