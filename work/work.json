@@ -11,8 +11,8 @@
   {
     "title": "Web Development Internship - Openlaunch",
     "description": [
-      "Developed a full-stack voting system for the National AI Competition 2025, featuring a Next.js and React-based user interface and admin dashboard. Integrated Qdrant for efficient vote data storage and used cookie-based tracking to ensure secure and reliable participation from over 1,000 users.",
-      "Developed an AI-powered CV semantic search system using Gemini Flash embeddings and Qdrant vector database to perform high-accuracy similarity matching. Optimised retrieval by implementing custom text chunking and cosine similarity scoring to rank and deliver the top 10 most relevant candidates based on semantic intent."
+      "Developed a <strong>full-stack voting system</strong> for the National AI Competition 2025, featuring a Next.js and React-strong user interface and admin dashboard. Integrated Qdrant for efficient vote data storage and used cookie-based tracking to ensure secure and reliable participation from over 1,000 users.",
+      "Developed an <strong>AI-powered CV semantic search system</strong> using Gemini Flash embeddings and Qdrant vector database to perform high-accuracy similarity matching. Optimised retrieval by implementing custom text chunking and cosine similarity scoring to rank and deliver the top 10 most relevant candidates based on semantic intent."
     ],
     "tags": ["Full-stack", "Gemini API", "Vector DB", "React", "Next.js"]
   }
