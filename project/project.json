@@ -1,14 +1,32 @@
 [
   {
-    "title": "CV Semantic Search Engine",
-    "description": "AI-powered candidate ranking system using Gemini embeddings and Qdrant vector database for high-precision semantic matching.",
-    "tags": ["Python", "Gemini API", "Qdrant", "Vector DB"],
-    "link": "https://github.com/your-username/cv-semantic-search"
+    "title": "Portfolio",
+    "description": "Personal interactive multi-page portfolio website with personal about, contact details, experiences and education",
+    "tags": ["HTML", "json", "Javascript", "Css"],
+    "link": "https://kuanzhiti.github.io/Portfolio"
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "Custom sudoku solving engine using backtracking mechanism built in Haskell with cursor navigation controls to fill in given numbers.",
+    "tags": ["Haskell"],
+    "link": "https://github.com/kuanzhiti/SudokuSolver"
+  },
+  {
+    "title": "Number Recognition Machine Learning",
+    "description": "...",
+    "tags": [""],
+    "link": "https://github.com/NicoleLeeChiaQi/MLNumRecognition"
   },
   {
     "title": "2D Mario Game Engine",
     "description": "Custom game engine built in C with Raylib, incorporating dynamic tilemap scrolling, enemy AI state machines, and real-time input telemetry.",
     "tags": ["C", "Raylib", "Game Dev", "Algorithms"],
-    "link": "https://github.com/your-username/mario-c-raylib"
+    "link": "https://github.com/kuanzhiti/C_MarioGame"
+  },
+  {
+    "title": "CV Semantic Search Engine",
+    "description": "AI-powered candidate ranking system using Gemini embeddings and Qdrant vector database for high-precision semantic matching.",
+    "tags": ["Python", "Gemini API", "Qdrant", "Vector DB"],
+    "link": "https://github.com/NicoleLeeChiaQi/CV-Semantic-Search"
   }
 ]
