@@ -1,31 +1,37 @@
 [
   {
-    "title": "Portfolio",
-    "description": "Personal interactive multi-page portfolio website with personal about, contact details, experiences and education",
-    "tags": ["HTML", "json", "Javascript", "Css"],
+    "title": "Portfolio Website",
+    "description": "Personal interactive multi-page portfolio highlighting projects, education, and technical experience.",
+    "tags": ["HTML", "CSS", "JavaScript", "JSON"],
     "link": "https://kuanzhiti.github.io/Portfolio"
   },
   {
     "title": "Sudoku Solver",
-    "description": "Custom sudoku solving engine using backtracking mechanism built in Haskell with cursor navigation controls to fill in given numbers.",
-    "tags": ["Haskell"],
+    "description": "Terminal-based Sudoku solving engine built in Haskell featuring custom grid navigation and backtracking algorithms.",
+    "tags": ["Haskell", "Algorithms", "TUI"],
     "link": "https://github.com/kuanzhiti/SudokuSolver"
   },
   {
-    "title": "Number Recognition Machine Learning",
-    "description": "...",
-    "tags": [""],
+    "title": "Image Cartooning",
+    "description": "Computer vision application with a customizable control panel to convert real-time webcam feeds or uploaded images into stylized cartoon art.",
+    "tags": ["Python", "OpenCV", "Computer Vision"],
+    "link": "https://github.com/kuanzhiti/MLcartooning"
+  },
+  {
+    "title": "Digit Recognition Engine",
+    "description": "Machine learning model trained on handwriting datasets to classify handwritten digits with real-time prediction capabilities.",
+    "tags": ["Python", "Machine Learning", "Neural Networks", "Computer Vision"],
     "link": "https://github.com/NicoleLeeChiaQi/MLNumRecognition"
   },
   {
     "title": "2D Mario Game Engine",
-    "description": "Custom game engine built in C with Raylib, incorporating dynamic tilemap scrolling, enemy AI state machines, and real-time input telemetry.",
+    "description": "Custom game engine built in C using Raylib, featuring dynamic tilemap scrolling, Goomba state machines, and real-time input telemetry.",
     "tags": ["C", "Raylib", "Game Dev", "Algorithms"],
     "link": "https://github.com/kuanzhiti/C_MarioGame"
   },
   {
     "title": "CV Semantic Search Engine",
-    "description": "AI-powered candidate ranking system using Gemini embeddings and Qdrant vector database for high-precision semantic matching.",
+    "description": "AI candidate ranking system built with <strong>Gemini Flash embeddings</strong> and <strong>Qdrant vector database</strong> for high-precision semantic candidate matching.",
     "tags": ["Python", "Gemini API", "Qdrant", "Vector DB"],
     "link": "https://github.com/NicoleLeeChiaQi/CV-Semantic-Search"
   }
