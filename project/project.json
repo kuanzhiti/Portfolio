@@ -34,5 +34,11 @@
     "description": "AI candidate ranking system built with <strong>Gemini Flash embeddings</strong> and <strong>Qdrant vector database</strong> for high-precision semantic candidate matching.",
     "tags": ["Python", "Gemini API", "Qdrant", "Vector DB"],
     "link": "https://github.com/NicoleLeeChiaQi/CV-Semantic-Search"
+  },
+  {
+    "title": "Python Slot Machine",
+    "description": "Custom slot machine game that keeps track balance of money and amount of money put into betting.",
+    "tags": ["Python"],
+    "link": "https://github.com/kuanzhiti/SlotMachine"
   }
 ]
