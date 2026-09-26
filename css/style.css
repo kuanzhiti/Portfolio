@@ -26,6 +26,7 @@ html {
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .header {
@@ -745,6 +746,43 @@ span{
 }
 
 @media (max-width: 768px){
+    /* Stack content vertically and center items */
+    .home {
+        flex-direction: column-reverse; /* Places text on top, image below (or use 'column' for image on top) */
+        justify-content: center;
+        gap: 3rem;
+        padding: 10rem 4% 4rem; /* Extra top padding so header doesn't overlap text */
+    }
+
+    .home-content {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content .text-animate {
+        margin: 0 auto;
+    }
+
+    /* Scale down image spinner so it fits nicely on phone screens */
+    .home-img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    /* Keep button box and social icons centered */
+    .btn-box {
+        width: 100%;
+        max-width: 32rem;
+    }
+
+    .home-sci {
+        position: relative; /* Change from absolute so it flows naturally under the content */
+        bottom: auto;
+        margin-top: 2.5rem;
+    }
     .header {
         background: var(--bg-color);    
     }
